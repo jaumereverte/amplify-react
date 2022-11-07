@@ -1,5 +1,19 @@
 import { ModelInit, MutableModel } from "@aws-amplify/datastore";
 
+export enum TipoSecundario {
+  BASICO = "BASICO",
+  PRO = "PRO"
+}
+
+export enum TipoPrimario {
+  LESS2000_MMA = "LESS2000MMA",
+  MORE2000_MMA = "MORE2000MMA"
+}
+
+type OfertaMetaData = {
+  readOnlyFields: 'createdAt' | 'updatedAt';
+}
+
 type NoteMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
@@ -10,6 +24,24 @@ type PostMetaData = {
 
 type TestimonialMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
+}
+
+export declare class Oferta {
+  readonly id: string;
+  readonly TipoPrimario?: TipoPrimario | keyof typeof TipoPrimario | null;
+  readonly TipoSecundario?: TipoSecundario | keyof typeof TipoSecundario | null;
+  readonly salary?: string | null;
+  readonly horario?: string | null;
+  readonly zona?: string | null;
+  readonly paradas?: string | null;
+  readonly formasDePago?: string | null;
+  readonly duracion?: string | null;
+  readonly mercancia?: string | null;
+  readonly vehiculo?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+  constructor(init: ModelInit<Oferta, OfertaMetaData>);
+  static copyOf(source: Oferta, mutator: (draft: MutableModel<Oferta, OfertaMetaData>) => MutableModel<Oferta, OfertaMetaData> | void): Oferta;
 }
 
 export declare class Note {

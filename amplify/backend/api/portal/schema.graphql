@@ -1,3 +1,27 @@
+enum TipoSecundario {
+  BASICO
+  PRO
+}
+
+enum TipoPrimario {
+  LESS2000MMA
+  MORE2000MMA
+}
+
+type Oferta @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  TipoPrimario: TipoPrimario
+  TipoSecundario: TipoSecundario
+  salary: String
+  horario: String
+  zona: String
+  paradas: String
+  formasDePago: String
+  duracion: String
+  mercancia: String
+  vehiculo: String
+}
+
 type Note @model @auth(rules: [{allow: owner}]) {
   id: ID!
   title: String

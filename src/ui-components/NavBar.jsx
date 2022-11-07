@@ -7,7 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Flex, Text } from "@aws-amplify/ui-react";
+import { Button, Flex, Image } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
   return (
@@ -38,28 +38,19 @@ export default function NavBar(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Logo")}
       >
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="700"
-          color="rgba(239,240,240,1)"
-          textTransform="capitalize"
-          lineHeight="24.204544067382812px"
-          textAlign="left"
+        <Image
+          width="100px"
+          height="41px"
           display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
           gap="unset"
           alignItems="unset"
+          justifyContent="unset"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Notes"
-          {...getOverrideProps(overrides, "Notes")}
-        ></Text>
+          objectFit="cover"
+          {...getOverrideProps(overrides, "image-removebg-preview 1")}
+        ></Image>
       </Flex>
       <Flex
         gap="15px"

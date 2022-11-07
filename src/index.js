@@ -8,13 +8,14 @@ import { Amplify } from "aws-amplify";
 import awsconfig from "./aws-exports";
 import "@aws-amplify/ui-react/styles.css";
 import { studioTheme } from "./ui-components";
+import Clientes from "./Clientes";
 
 Amplify.configure(awsconfig);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <AmplifyProvider theme={studioTheme}>
-    <App />
+    <Clientes />
   </AmplifyProvider>
 );
 
