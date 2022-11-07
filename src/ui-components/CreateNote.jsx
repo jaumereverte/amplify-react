@@ -103,7 +103,7 @@ export default function CreateNote(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          label="Title"
+          label="Titulo"
           size="default"
           isDisabled={false}
           labelHidden={false}
@@ -127,7 +127,7 @@ export default function CreateNote(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          label="Note"
+          label="Descripcion"
           size="default"
           isDisabled={false}
           labelHidden={false}
@@ -139,6 +139,96 @@ export default function CreateNote(props) {
             );
           }}
           {...getOverrideProps(overrides, "TextField34472013")}
+        ></TextField>
+        <TextField
+          display="flex"
+          gap="8px"
+          direction="column"
+          width="592px"
+          height="unset"
+          justifyContent="center"
+          alignItems="flex-start"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          label="Salario"
+          size="default"
+          isDisabled={false}
+          labelHidden={false}
+          variation="default"
+          {...getOverrideProps(overrides, "TextField34591795")}
+        ></TextField>
+        <TextField
+          display="flex"
+          gap="8px"
+          direction="column"
+          width="592px"
+          height="unset"
+          justifyContent="center"
+          alignItems="flex-start"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          label="Zona de reparto"
+          size="default"
+          isDisabled={false}
+          labelHidden={false}
+          variation="default"
+          {...getOverrideProps(overrides, "TextField34591802")}
+        ></TextField>
+        <TextField
+          display="flex"
+          gap="8px"
+          direction="column"
+          width="592px"
+          height="unset"
+          justifyContent="center"
+          alignItems="flex-start"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          label="Paradas"
+          size="default"
+          isDisabled={false}
+          labelHidden={false}
+          variation="default"
+          {...getOverrideProps(overrides, "TextField34591809")}
+        ></TextField>
+        <TextField
+          display="flex"
+          gap="8px"
+          direction="column"
+          width="592px"
+          height="unset"
+          justifyContent="center"
+          alignItems="flex-start"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          label="Vehiculo"
+          size="default"
+          isDisabled={false}
+          labelHidden={false}
+          variation="default"
+          {...getOverrideProps(overrides, "TextField34591816")}
+        ></TextField>
+        <TextField
+          display="flex"
+          gap="8px"
+          direction="column"
+          width="592px"
+          height="unset"
+          justifyContent="center"
+          alignItems="flex-start"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          label="Tipo de mercancia"
+          size="default"
+          isDisabled={false}
+          labelHidden={false}
+          variation="default"
+          {...getOverrideProps(overrides, "TextField34591823")}
         ></TextField>
         <Divider
           width="unset"
@@ -168,7 +258,7 @@ export default function CreateNote(props) {
           size="default"
           isDisabled={false}
           variation="primary"
-          children="Save"
+          children="Crear Oferta"
           onClick={() => {
             buttonOnClick();
           }}

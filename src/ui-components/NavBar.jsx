@@ -80,7 +80,7 @@ export default function NavBar(props) {
           size="default"
           isDisabled={false}
           variation="default"
-          children="Create Note"
+          children="Crear Oferta"
           {...getOverrideProps(overrides, "Button34472029")}
         ></Button>
         <Button
@@ -99,7 +99,7 @@ export default function NavBar(props) {
           size="default"
           isDisabled={false}
           variation="default"
-          children="Sign Out"
+          children="Cerrar Sesión"
           {...getOverrideProps(overrides, "Button34472030")}
         ></Button>
       </Flex>

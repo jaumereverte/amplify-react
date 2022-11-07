@@ -146,7 +146,7 @@ export default function UpdateNote(props) {
             size="default"
             isDisabled={false}
             variation="primary"
-            children="Save"
+            children="Crear"
             onClick={() => {
               buttonOnClick();
             }}

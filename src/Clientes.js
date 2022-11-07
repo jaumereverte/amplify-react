@@ -44,14 +44,7 @@ function App({ signOut }) {
         className="modal"
         style={{ display: showCreateModal === false && "none" }}
       >
-        <CreateNote
-          overrides={{
-            MyIcon: {
-              as: "button",
-              onClick: () => setShowCreateModal(false),
-            },
-          }}
-        />
+        <CreateNote />
       </div>
     </>
   );
